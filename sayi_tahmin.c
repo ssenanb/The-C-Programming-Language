@@ -6,11 +6,8 @@ int main()
 {
     int tahmin,bilgisayar,hak = 3;
 
-    srand(time(NULL));  //tohumlama(seeding)
-    // srand(),rand() fonksiyonunun başlangıç değerini(tohum) ayarlar.
-    //time(NULL) ifadesi her saniye değiştiğinde değeri değiştirmek için kullanılır.--> 1 sn yerine 2 sn sonra tahminde bulunursam başangıçtaki tutulan sayı değişir mi?
-    bilgisayar = rand() % 100 + 1;  //1 ile 100 arasında sayı tuttuğunu göstermek için.
-
+    srand(time(NULL));  
+    bilgisayar = rand() % 100 + 1; 
     printf("1 ile 100 arasında bir sayı tuttum.3 tahmin hakkın var.\n");
 
     for(int i = 0; i < hak;i++){

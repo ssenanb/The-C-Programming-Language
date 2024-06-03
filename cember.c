@@ -1,27 +1,27 @@
 #include<stdio.h>
 #include<math.h>
 
-float çevre(float r)
+float environment(float r)
 {
     float pi = 3.14;
-    float çevre_sonuç = 2*pi*r;
-    return çevre_sonuç;
+    float environment_result = 2*pi*r;
+    return environment_result;
 }
 
-float alan(float r)
+float area(float r)
 {
     float pi = 3.14;
-    double alan_sonuç = pi*pow(r,2);
-    return alan_sonuç; 
+    double area_result = pi*pow(r,2);
+    return area_result; 
 }
 
 int main()
 {
     float r;
 
-    printf("yarıçapı girin: ");
+    printf("enter a radius: ");
     scanf("%f",&r);
 
-    printf("çevre: %.2f\t alan: %.2f\n",çevre(r),alan(r));
+    printf("environment: %.2f\t area: %.2f\n",environment(r),area(r));
     return 0;
 }

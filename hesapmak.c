@@ -1,94 +1,93 @@
 #include<stdio.h>
 #include<math.h>
 
-void toplama(int a, int b)
+void addition(int a, int b)
 {
-    int topla = a + b;
-    printf("%d\n",topla);
+    int sum = a + b;
+    printf("%d\n", sum);
 }
 
-void çıkarma(int a, int b)
+void subtraction(int a, int b)
 {
-    int çıkar = a - b;
-    printf("%d\n",çıkar);
+    int subtract = a - b;
+    printf("%d\n", subtract);
 }
 
-void bölme(int a, int b)
+void division(int a, int b)
 {
-    int böl = a / b;
-    printf("%d\n",böl);
+    int divide = a / b;
+    printf("%d\n", divide);
 }
 
-void çarpma(int a, int b)
+void multiplication(int a, int b)
 {
-    int çarp = a * b;
-    printf("%d\n",çarp);
+    int multiply = a * b;
+    printf("%d\n", multiply);
 }
 
-void mod_alma(int a, int b)
+void modulus(int a, int b)
 {
     int mod = a % b;
-    printf("%d\n",mod);
+    printf("%d\n", mod);
 }
 
-void üs_alma(double a, double b)
+void exponentiation(double a, double b)
 {
-    int üs = pow(a,b);
-    printf("%d\n",üs); 
+    double result = pow(a, b);
+    printf("%.2f\n", result); 
 }
 
-void karekök(float a)
+void squareRoot(float a)
 {
-    printf("%.2f\n",sqrt(a));
+    printf("%.2f\n", sqrt(a));
 }
 
 int main()
 {
     
-    char işlem;
-    int a,b;
+    char operation;
+    int a, b;
 
-    printf("işlemi seçiniz(+,-,*,/,x,!,#)\nişlem: ");
-    // ! mod alma, # kök alma , x üs almak için kullanılır.
-    scanf(" %c",&işlem);
+    printf("Select the operation (+,-,*,/,x,!,#)\nOperation: ");
+    // ! is for modulus, # is for square root, x is for exponentiation.
+    scanf(" %c", &operation);
 
    
-      if (işlem == '+'){
-        printf("sayıları giriniz: ");
-        scanf("%d %d", &a,&b);
-        toplama(a,b);
+      if (operation == '+'){
+        printf("Enter the numbers: ");
+        scanf("%d %d", &a, &b);
+        addition(a, b);
     
-      }else if(işlem == '-'){
-        printf("sayıları giriniz: ");
-        scanf("%d %d", &a,&b);
-        çıkarma(a,b);
+      } else if(operation == '-'){
+        printf("Enter the numbers: ");
+        scanf("%d %d", &a, &b);
+        subtraction(a, b);
         
-      }else if(işlem == '/'){
-        printf("sayıları giriniz: ");
-        scanf("%d %d", &a,&b);
-        bölme(a,b);
+      } else if(operation == '/'){
+        printf("Enter the numbers: ");
+        scanf("%d %d", &a, &b);
+        division(a, b);
         
-      }else if(işlem == '*'){
-        printf("sayıları giriniz: ");
-        scanf("%d %d", &a,&b);
-        çarpma(a,b);
+      } else if(operation == '*'){
+        printf("Enter the numbers: ");
+        scanf("%d %d", &a, &b);
+        multiplication(a, b);
         
-      }else if(işlem == 'x'){
-        printf("sayıları giriniz: ");
-        scanf("%d %d", &a,&b);
-        üs_alma(a,b);
+      } else if(operation == 'x'){
+        printf("Enter the numbers: ");
+        scanf("%d %d", &a, &b);
+        exponentiation(a, b);
         
-      }else if(işlem == '#'){
-        printf("sayıyı giriniz: ");
-        scanf("%d",&a);
-        karekök(a);
+      } else if(operation == '#'){
+        printf("Enter the number: ");
+        scanf("%d", &a);
+        squareRoot(a);
         
-      }else if(işlem == '!'){
-        printf("sayıları giriniz: ");
-        scanf("%d %d", &a,&b);
-        mod_alma(a,b);
+      } else if(operation == '!'){
+        printf("Enter the numbers: ");
+        scanf("%d %d", &a, &b);
+        modulus(a, b);
       }
     
     return 0;
 }
-

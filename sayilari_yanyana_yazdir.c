@@ -2,19 +2,18 @@
 
 int main()
 {
-    int alt_sınır;
-    int üst_sınır;
+    int lower_limit;
+    int upper_limit;
     int i;
 
-    printf("alt sınırı giriniz:" );
-    scanf("%d", &alt_sınır);
-    printf("üst sınırı giriniz:");
-    scanf("%d", &üst_sınır);
+    printf("Enter the lower limit:" );
+    scanf("%d", &lower_limit);
+    printf("Enter the upper limit:");
+    scanf("%d", &upper_limit);
 
-    for(i = alt_sınır; i<= üst_sınır; i++){
-        printf("%d ",i);
+    for(i = lower_limit; i <= upper_limit; i++){
+        printf("%d ", i);
     }
-        printf("\nBu kadar!\n");
-        return 0;
+    printf("\nThat's it!\n");
+    return 0;
 }
-

@@ -2,22 +2,22 @@
 
 int main()
 {
-    int sayı;
+    int number;
     int s[4];
-    int toplam = 0;
+    int sum = 0;
 
-    printf("4 basamaklı bir sayı girin: ");
-    scanf("%d",&sayı);
+    printf("Enter 4 digit number: ");
+    scanf("%d",&number);
 
     for(int i = 3; i >= 0;i--){
-        s[i] = sayı % 10;
-        sayı /= 10;
+        s[i] = number % 10;
+        number /= 10;
     }
 
     for(int i = 0; i < 4; i++){
-        toplam += s[i];
+        sum += s[i];
     }
 
-    printf("rakamlar toplamı:%d\n",toplam);
+    printf("digit sum:%d\n",sum);
     return 0; 
  }

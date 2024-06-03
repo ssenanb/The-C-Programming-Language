@@ -15,7 +15,7 @@ int main()
     printf("enter two numbers: ");
     scanf("%d %d",&number1,&number2);
 
-    printf("prime numbers between %d and %d\n",sayı1,sayı2);
+    printf("prime numbers between %d and %d\n",number1,number2);
 
     for(number1; number1 <= number2; number1++){
         if( prime (number1) ){

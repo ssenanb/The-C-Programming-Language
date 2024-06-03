@@ -3,23 +3,23 @@
 int main()
 {
    int n;
-   int toplam = 0;
-   int sayaç = 1;
+   int sum = 0;
+   int counter = 1;
 
-   printf("öğrenci sayısını girin:");
+   printf("enter the number of students:");
    scanf("%d",&n);
 
-   int puan[n];
+   int point[n];
 
    for(int i = 0; i < n; i++)
    {
-        printf("%d.öğrencinin notu: ",sayaç++);
-        scanf("%d",&puan[i]);
-        toplam += puan[i];
+        printf("%d.student's grade: ",counter++);
+        scanf("%d",&point[i]);
+        sum += point[i];
    }
     
-    printf("öğrencilerin notlarının toplamı:%d\n",toplam );
-    printf("öğrencilerin not ortalaması: %d\n",toplam / n);
+    printf("total of students' grades:%d\n",sum );
+    printf("students' grade point average: %d\n",sum / n);
    
     return 0;
 }

@@ -4,26 +4,26 @@
 
 int main()
 {
-    int tahmin,bilgisayar,hak = 3;
+    int guess,system,remainder = 3;
 
     srand(time(NULL));  
-    bilgisayar = rand() % 100 + 1; 
-    printf("1 ile 100 arasında bir sayı tuttum.3 tahmin hakkın var.\n");
+    system = rand() % 100 + 1; 
+    printf("I chose a number between 1 and 100. You have 3 guesses..\n");
 
-    for(int i = 0; i < hak;i++){
-        printf("tahminin nedir,%d hakkın kaldı\n",hak - i);
-        scanf("%d",&tahmin);
+    for(int i = 0; i < remainder;i++){
+        printf("What is your guess, you have %d chances left\n",remainder - i);
+        scanf("%d",&guess);
     
-    if(tahmin < bilgisayar){
-        printf("daha büyük bir sayı deneyin\n");
-    }else if(tahmin > bilgisayar){
-        printf("daha küçük bir sayı deneyin\n");
+    if(guess < system){
+        printf("try a larger number\n");
+    }else if(guess > system){
+        printf("try a smaller number\n");
     }else{
-        printf("doğru tahmin ettin!");
+        printf("you guessed right!");
     }
     }
     
-    printf("tahmin hakkın bitti.tuttuğum sayı %d olacaktı.\n",bilgisayar);
+    printf("You're out of guesses. The number I chose would be %d.\n",system);
 
     return 0;
 }

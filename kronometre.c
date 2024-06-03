@@ -3,13 +3,13 @@
 
 int main()
 {
-    time_t başlangıç,bitiş;
-    printf("kronometreyi başlatmak için enter tuşuna basın.");
+    time_t start,finish;
+    printf("press enter to start stopwatch.");
     getchar();
-    time(&başlangıç);
-    printf("kronometreyi durdurmak için enter tuşuna basın.");
+    time(&start);
+    printf("press enter to finish stopwatch.");
     getchar();
-    time(&bitiş);
-    printf("geçen süre: %.2f saniye.\n",difftime(bitiş,başlangıç));
+    time(&finish);
+    printf("the passing time: %.2f second.\n",difftime(finish,start));
 
 }

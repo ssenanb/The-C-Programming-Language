@@ -2,23 +2,23 @@
 
 int main()
 {
-    int sayı;
-    printf("bir sayı girin: ");
-    scanf("%d",&sayı);
+    int number;
+    printf("Enter a number: ");
+    scanf("%d", &number);
 
-    printf("doğal sayılar\n");
-    for(int i = 1; i <= sayı;i++){
-        printf("%d ",i);
+    printf("Natural numbers\n");
+    for(int i = 1; i <= number; i++){
+        printf("%d ", i);
     }
 
-    printf("\nçift sayılar\n");
-    for(int j = 0; j <= sayı; j += 2){
-        printf("%d ",j);
+    printf("\nEven numbers\n");
+    for(int j = 0; j <= number; j += 2){
+        printf("%d ", j);
     }
 
-    printf("\ntek sayılar\n");
-    for(int k = 1; k <= sayı; k += 2 ){
-        printf("%d ",k);
+    printf("\nOdd numbers\n");
+    for(int k = 1; k <= number; k += 2){
+        printf("%d ", k);
     }
 
     return 0;

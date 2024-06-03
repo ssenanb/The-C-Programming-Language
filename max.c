@@ -4,28 +4,28 @@ int main(void)
 {
     int a,b,c ;
 
-    printf("3 adet sayı girin\n");
-    printf("sayı1:");
+    printf("enter 3 numbers\n");
+    printf("number1:");
     scanf("%d" , &a);
 
-    printf("sayı2:");
+    printf("number2:");
     scanf("%d" , &b);
 
-    printf("sayı3:");
+    printf("number3:");
     scanf("%d" , &c);
 
 
     if(a > b && a > c){
-        printf("üç sayıdan en büyüğü %d\n" , a); 
+        printf("largest of 3 numbers %d\n" , a); 
     }
     else if(b > a && b > c){
-        printf("üç sayıdan en büyüğü %d\n" , b); 
+        printf("largest of 3 numbers %d\n" , b); 
     }
     else if(c > a && c > b){
-        printf("üç sayıdan en büyüğü %d\n" , c);
+        printf("largest of 3 numbers %d\n" , c);
     }
     else if (a = b = c){
-        printf("sayılar birbirine eşit\n");
+        printf("numbers are equal\n");
     }
     return 0;
 

@@ -3,15 +3,15 @@
 
 int main()
 {
-    int sayı, x = 1;
+    int number, x = 1;
 
-    printf("faktöriyelini hesaplayacağınız sayıyı girin: ");
-    scanf("%d", &sayı);
+    printf("Enter the number whose factorial will be calculated: ");
+    scanf("%d", &number);
 
-    for( int i = 1 ; i <= sayı ; i++ )     
+    for( int i = 1 ; i <= number ; i++ )     
     {
         x *= i;
     }          
-    printf("%d! = %d\n", sayı,x);
+    printf("%d! = %d\n", number,x);
     return 0;
 }
